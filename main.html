@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자기소개:introduce</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" href="work.css">
+        <script src="work.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header><h1 id="name">DongHo Kim</h1></header>
+        <nav>
+            <div class="nav_content">
+                <div class="nav_item project"><button>project</button></div>
+                <div class="nav_item introduce"><button>introduce</button></div>
+                <div class="nav_item home"><button>home</button></div>
+            </div>
+        </nav>
+        <hr>
+        <div id="page1" class="page">
+            <div class="welcome text-center">
+                <div class="rimg">
+                    <img class="me3" src="me3.jpg">
+                </div>
+                <div class="weltext">
+                    <p class="text"></p>
+                </div>
+                <script>
+                    const content = "Hi!! This is Kim Dongho's self-introduction page.";
+                    const text = document.querySelector(".text");
+                    let i = 0;
+        
+                    function typing(){
+                        text.textContent += content[i++];
+                        if (i > content.length) {
+                            text.textContent = "";
+                            i = 0;
+                        }
+                    };
+                    setInterval(typing, 300)
+                </script>
+            </div>
+        </div>
+        <div id="page2" class="page">
+            <section>
+                <div class="content">
+                    <img class="myimg ig"src="me2.jpg" width="220px" height="220px"alt="김동호">
+                    <img class="myimg2 ig"src="me.jpg" width="220px" height="220px"alt="김동호">
+                    <h1 class="intro">Introduce</h1>
+                    <p class="main-content">I am majoring in <a class="acolor"href="https://cse.kangwon.ac.kr/cse/index.do">computer engineering</a> at <a class="acolor"href="https://wwwk.kangwon.ac.kr/www/index.do">Kangwon National University</a>, South Korea.
+                            I don't have a goal for a specific job in the IT field yet, so I'm trying to experience various fields from the first grade to the present.
+                            In the past, when I was in middle and high school, I first encountered programming and tried to make various works with Arduino and MIT App Inventor.
+                            When I was in my first year of university, I developed a website as a member of the club,"<a class="acolor"href="https://www.likelion.net/">Like Lion</a>" at Kangwon National University and participated in the 2022 MSW competition.
+                    </p>
+                </div>
+                <div class="info text-center">
+                    <div class="email">
+                        <a class="emailfont"href="mailto:saromeokdh@gmail.com">saromeokdh@gmail.com</a> 
+                    </div>
+                        |
+                    <div class="sns">
+                        <a href="https://www.instagram.com/kdh_1205.zz/"><img class="sns"src="insta.png"></a>
+                    </div>
+                        |
+                    <div class="sns">
+                        <a href="https://github.com/NoobKDH"><img class="sns" src="git.PNG"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="page3" class="page">
+            <div class="project-content">
+                <button class="2020"><h4>2020</h4></button>
+                <div id="panel3">
+                    <table class="high2 pt">
+                        <tr>
+                            <td class="arduino">
+                                <a class="acolor"href="https://1drv.ms/b/s!Al8i8cn8f4j5hdV3ZE_AR52323iizw?e=mLS46X">
+                                    <p class="pw">"Portable Fine Dust Meter with 3D Print(Arduino)"</p>
+                                </a>
+                                <br>
+                                <em class="ymd">Made on November 7th, 2020</em>
+                            </td>
+                        </tr>
+                </table>
+                </div>
+                <br>
+                <button class="2021"><h4>2021</h4></button>
+                <div id="panel1">
+                    <table class="high3 pt">
+                        <tr>
+                            <td class="mit">
+                                <a class="acolor"href="https://1drv.ms/b/s!Al8i8cn8f4j5hdV200J8QaucdC_huw?e=SbeROh">
+                                    <p class="pw">"Heavy drinking prevention apps (MIT App Inventor)"</p>
+                                </a>
+                                <br>
+                                <em class="ymd">Made on July 23th, 2021</em>
+                            </td>
+                        </tr>
+                </table>
+                </div>
+                <br>
+                <button class="2022"><h4>2022</h4></button>
+                <div id="panel2">
+                    <table class="collge1 pt">
+                        <tr>
+                            <td class="c1-msw">
+                                <a class="acolor" href="https://maplestoryworlds.nexon.com/ko/play/fb3e915d27cd4689838cebf297fff407/"><p class="pw">"2022 MapleStory Worlds SUPER HACKATHON"</p></a>
+                                <br>
+                                <a class="pdfcolor" href="https://1drv.ms/b/s!Al8i8cn8f4j5hIpbo1jT8ScCkJAIew?e=aZNMLw"><p class="pw">Project Introduction(PDF)</p></a>
+                                <br>
+                                <em class="ymd">Made on November 25, 2022</em>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+            <footer>
+                <p class="text-center cp">Copyright @ 2023.DongHo Kim All rights reserved.</p>
+            </footer>
+    </body>
+</html>
